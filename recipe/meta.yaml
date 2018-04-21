@@ -1,8 +1,8 @@
 {% set name = "newspaper3k" %}
-{% set version = "0.2.5" %}
+{% set version = "0.2.6" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "abe2ff199e5a41cc9d690fd5ade7cf605dc542f98b1071b26e91ef136a50042d" %}
+{% set hash_value = "9f86d00c016ceed2019be97bcac79be9ed42492852e051c07a8cd3e6f89e215c" %}
 
 package:
   name: '{{ name|lower }}'
