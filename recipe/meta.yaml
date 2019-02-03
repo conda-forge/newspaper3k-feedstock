@@ -1,8 +1,8 @@
 {% set name = "newspaper3k" %}
-{% set version = "0.2.6" %}
+{% set version = "0.2.8" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "9f86d00c016ceed2019be97bcac79be9ed42492852e051c07a8cd3e6f89e215c" %}
+{% set hash_value = "9f1bd3e1fb48f400c715abf875cc7b0a67b7ddcd87f50c9aeeb8fcbbbd9004fb" %}
 
 package:
   name: '{{ name|lower }}'
@@ -14,7 +14,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 1000
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
   skip: True  # [py2k]
   
