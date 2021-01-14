@@ -14,7 +14,7 @@ build:
   skip: True  # [py2k]
   
 requirements:
-  build:
+  host:
     - python
     - pip  
   run:
