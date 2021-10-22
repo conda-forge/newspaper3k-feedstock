@@ -47,9 +47,12 @@ about:
   home: https://github.com/codelucas/newspaper/
   summary: Simplified python article discovery & extraction.
   license: MIT
+  license_family: MIT
   license_file:
     - LICENSE
     - GOOSE-LICENSE.txt
+  doc_url: https://newspaper.readthedocs.io/en/latest
+  dev_url: https://github.com/codelucas/newspaper
 
 extra:
   recipe-maintainers:
