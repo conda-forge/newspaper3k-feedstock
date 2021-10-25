@@ -9,6 +9,10 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/newspaper3k-fee
 
 Summary: Simplified python article discovery & extraction.
 
+Development: https://github.com/codelucas/newspaper
+
+Documentation: https://newspaper.readthedocs.io/en/latest
+
 Current build status
 ====================
 
