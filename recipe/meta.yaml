@@ -7,18 +7,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/newspaper3k-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/newspaper3k-{{ version }}.tar.gz
   sha256: 9f1bd3e1fb48f400c715abf875cc7b0a67b7ddcd87f50c9aeeb8fcbbbd9004fb
 
 build:
-  number: 3
+  number: 4
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.5
+    - python {{ python_min }}
   run:
     - beautifulsoup4 >=4.4.1
     - cssselect >=0.9.2
@@ -28,7 +28,7 @@ requirements:
     - lxml >=3.6.0
     - nltk >=3.2.1
     - pillow >=3.3.0
-    - python >=3.5
+    - python >={{ python_min }}
     - python-dateutil >=2.5.3
     - pyyaml >=3.11
     - requests >=2.10.0
@@ -42,6 +42,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/codelucas/newspaper/
