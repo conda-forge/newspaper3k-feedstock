@@ -26,7 +26,7 @@ requirements:
     - feedfinder2 >=0.0.4
     - feedparser >=5.2.1
     - jieba3k >=0.35.1
-    - lxml >=3.6.0
+    - lxml >=3.6.0,<5.2.0
     - nltk >=3.2.1
     - pillow >=3.3.0
     - python >={{ python_min }}
